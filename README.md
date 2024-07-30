@@ -25,7 +25,7 @@ Asegúrate de tener instalados los siguientes componentes:
 1. **Clonar el Repositorio:**
 
    ```bash
-   git clone https://github.com/DeisonBM/IonicApp.git
+   git clone https://github.com/Mercedes011901/IonicApp.git
    ```
 
 2. **Instalar las Dependencias:**
