@@ -1,0 +1,78 @@
+:root {
+  --caption-title-color: #FF69B4; /* Rosa */
+  --caption-background-color: rgba(255, 182, 193, 0.8); /* Fondo rosa claro semi-transparente */
+  --caption-text-background-color: rgba(255, 182, 193, 0.9); /* Fondo para el texto */
+  --caption-title-font-size: 2em;
+  --caption-text-font-size: 1.2em;
+  --caption-padding: 15px;
+  --caption-border-color: #FF69B4; /* Borde rosa */
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  background-color: #FFE4E1; /* Fondo rosa claro */
+}
+
+swiper-container {
+  width: 100%;
+  height: 90%;
+}
+
+swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.caption-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 800px; /* Ajusta el ancho máximo */
+  padding: 20px;
+  background-color: var(--caption-background-color); /* Fondo semi-transparente */
+  border: 2px solid var(--caption-border-color); /* Borde rosa */
+  border-radius: 20px; /* Esquinas más redondeadas */
+  margin: 10px;
+}
+
+.caption-title {
+  color: var(--caption-title-color); /* Rosa */
+  font-size: var(--caption-title-font-size);
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(255, 105, 180, 0.7); /* Sombra rosa */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px; /* Esquinas más redondeadas */
+  margin-bottom: 10px;
+}
+
+.caption-text {
+  color: #000; /* Negro para mejor legibilidad */
+  font-size: var(--caption-text-font-size);
+  margin-top: 10px;
+  background: var(--caption-text-background-color);
+  padding: var(--caption-padding);
+  border-radius: 10px;
+}
+
+#cerrar {
+  font-size: 2rem;
+  color: #FF69B4; /* Rosa */
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: -20px;
+  background-color: rgba(255, 182, 193, 0.8); /* Fondo rosa claro semi-transparente */
+}

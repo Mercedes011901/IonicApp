@@ -1,0 +1,32 @@
+ion-content {
+  --background: #f8e1f4; /* Fondo rosa claro */
+}
+
+ion-toolbar {
+  --background: #f8b6d2; /* Color de fondo de la barra de herramientas */
+  --color: #ffffff; /* Color del texto */
+}
+
+.home-header {
+  text-align: center;
+  padding: 20px;
+  color: #080808;
+}
+
+.custom-card {
+  --background: #ffffff; /* Fondo blanco para las tarjetas */
+  --border-radius: 15px; /* Bordes redondeados */
+  --box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  margin: 10px;
+  font-weight:bold;
+}
+
+.custom-icon {
+  font-size: 36px;
+  color: #f06292; /* Color de los iconos */
+}
+
+.custom-card p {
+  margin: 10px 0 0;
+  color: #333333; /* Color del texto */
+}

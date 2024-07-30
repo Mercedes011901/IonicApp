@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Artistas</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismissModal()">Cerrar</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let artist of artists">
+      <ion-thumbnail slot="start">
+        <img [src]="artist.image" class="rounded-thumbnail">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ artist.name }}</h2>
+        <p>Popularidad: {{ artist.popularity }}</p>
+        <p>Creado: {{ artist.created_at | date:'medium' }}</p>
+        <p>Actualizado: {{ artist.updated_at | date:'medium' }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,47 @@
+:root {
+    --ion-background-color: #FFE4E1; /* Fondo rosa claro */
+    --ion-toolbar-background: #FF69B4; /* Barra de herramientas rosa */
+    --ion-text-color: #000; /* Texto negro */
+    --ion-border-color: #FF69B4; /* Bordes rosas */
+    --ion-button-color: #FFF; /* Botones blancos */
+    --ion-button-background: #FF69B4; /* Fondo de botones rosas */
+  }
+  
+  ion-header, ion-toolbar, ion-title, ion-button {
+    color: var(--ion-text-color);
+  }
+  
+  ion-toolbar {
+    background-color: var(--ion-toolbar-background);
+  }
+  
+  ion-content {
+    --background: var(--ion-background-color);
+  }
+  
+  ion-item {
+    --background: rgba(255, 182, 193, 0.5); /* Fondo semi-transparente */
+    border-radius: 10px;
+    margin: 5px;
+  }
+  
+  ion-label h2 {
+    color: var(--ion-text-color);
+    font-weight: bold;
+  }
+  
+  ion-label p {
+    color: var(--ion-text-color);
+  }
+  
+  ion-button {
+    --color: var(--ion-button-color);
+    --background: var(--ion-button-background);
+    border-radius: 10px;
+  }
+  
+  .rounded-thumbnail {
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  

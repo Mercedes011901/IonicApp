@@ -1,0 +1,47 @@
+/* Margen */
+.m-1 {
+  margin: 1rem !important;
+}
+
+.m-2 {
+  margin: 2rem !important;
+}
+
+/* Padding */
+.p-1 {
+  padding: 1rem !important;
+}
+
+.p-2 {
+  padding: 2rem !important;
+}
+
+/* Colores de Fondo */
+.bg-primary {
+  background-color: var(--ion-color-primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--ion-color-secondary) !important;
+}
+
+/* Texto */
+.text-center {
+  text-align: center !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+* {
+  font-family: 'Great Vibes', cursive;
+}
+
+body, ion-content {
+  font-family: 'Roboto', sans-serif; /* Fuente legible para textos largos */
+}
+
+h1, h2, h3, h4, h5, h6, ion-title {
+  font-family: 'Great Vibes', cursive; /* Fuente femenina para títulos */
+}

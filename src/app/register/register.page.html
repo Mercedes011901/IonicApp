@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-button (click)="goToLogin()">
+        <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title class="ion-text-center">Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <div class="ion-text-center" style="margin-top: 20px;">
+    <ion-icon name="person-circle-outline" style="font-size: 100px; color: #f06292;"></ion-icon>
+  </div>
+
+  <form [formGroup]="registerForm" (ngSubmit)="register(registerForm.value)">
+    <ion-list lines="full">
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input formControlName="name"></ion-input>
+      </ion-item>
+      <ion-text color="danger" *ngIf="registerForm.get('name')?.hasError('required') && registerForm.get('name')?.dirty">
+        <p class="ion-padding-start">El nombre es un campo obligatorio</p>
+      </ion-text>
+
+      <ion-item>
+        <ion-label position="floating">Apellido</ion-label>
+        <ion-input formControlName="last_name"></ion-input>
+      </ion-item>
+      <ion-text color="danger" *ngIf="registerForm.get('last_name')?.hasError('required') && registerForm.get('last_name')?.dirty">
+        <p class="ion-padding-start">El apellido es un campo obligatorio</p>
+      </ion-text>
+
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" formControlName="email"></ion-input>
+      </ion-item>
+      <ion-text color="danger" *ngIf="registerForm.get('email')?.hasError('required') && registerForm.get('email')?.dirty">
+        <p class="ion-padding-start">El correo electrónico es un campo obligatorio</p>
+      </ion-text>
+      <ion-text color="danger" *ngIf="registerForm.get('email')?.hasError('email') && registerForm.get('email')?.dirty">
+        <p class="ion-padding-start">Correo electrónico inválido</p>
+      </ion-text>
+
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type="password" formControlName="password" [type]="passwordType"></ion-input>
+        <ion-icon slot="end" [name]="passwordIcon" (click)="togglePasswordVisibility()"></ion-icon>
+      </ion-item>
+      <ion-text color="danger" *ngIf="registerForm.get('password')?.hasError('required') && registerForm.get('password')?.dirty">
+        <p class="ion-padding-start">La contraseña es un campo obligatorio</p>
+      </ion-text>
+      <ion-text color="danger" *ngIf="registerForm.get('password')?.hasError('minlength') && registerForm.get('password')?.dirty">
+        <p class="ion-padding-start">La contraseña debe tener al menos 6 caracteres</p>
+      </ion-text>
+    </ion-list>
+
+    <ion-button type="submit" expand="block" color="secondary" [disabled]="!registerForm.valid" class="ion-margin-top">
+      Registrarse
+    </ion-button>
+  </form>
+
+</ion-content>
